@@ -16,7 +16,7 @@ frontend elvis-frontend
         default_backend elvis-backend
 backend elvis-backend
         balance roundrobin
-        server 6212-web-01 3.81.230.97.211:80 check
+        server 6212-web-01 3.81.230.97:80 check
         server 6212-web-02 18.234.88.63:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
